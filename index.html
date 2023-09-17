@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+
+    <title>BigInt algorithm</title>
+  </head>
+
+  <body>
+    <form class="form" onsubmit="matchAction(event)">
+      <h1>BigInt algorithm</h1>
+      <label for="num1">số thứ 1</label>
+      <textarea type="text" id="num1" required title="nhập chữ số"></textarea>
+      <label for="num2">số thứ 2</label>
+      <textarea type="text" id="num2" required title="nhập chữ số"></textarea>
+      <label for="result">Kết quả</label>
+      <textarea type="text" readonly id="result"></textarea>
+      <div>
+        <label for="">Thời gian tính: </label>
+        <input readonly class="time" value="0 milliseconds" />
+      </div>
+      <div class="selection">
+        <label for="math"> phép tính</label>
+        <select id="math">
+          <option value="summation">cộng</option>
+          <option value="subtraction">trừ</option>
+          <option value="multiplication">nhân</option>
+          <option value="division">chia</option>
+        </select>
+      </div>
+      <div>
+        <button type="submit" id="perform">tính</button>
+        <button type="button" id="random">random</button>
+        <button type="button" id="clear">clear</button>
+      </div>
+    </form>
+  </body>
+</html>
